@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
 import { Display } from '../utils'
-import { Fonts, Colors, Images } from '../contants'
+import { Fonts, Images } from '../contants'
 
 type CardData = {
   title: string,
@@ -32,11 +32,11 @@ const styles = StyleSheet.create({
   },
   titleText: {
     fontSize: 22,
-    //fontFamily: Fonts.POPPINS_BOLD
+    fontFamily: Fonts.POPPINS_BOLD
   },
   contentText: {
     fontSize: 18,
-    //fontFamily: Fonts.POPPINS_LIGHT,
+    fontFamily: Fonts.POPPINS_LIGHT,
     textAlign: 'center',
     marginHorizontal: 20,
   }

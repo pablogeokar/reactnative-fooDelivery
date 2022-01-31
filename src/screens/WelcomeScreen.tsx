@@ -27,7 +27,7 @@ const WelcomeScreen = () => {
 
   const [welcomeListIndex, setWelcomeListIndex] = useState(0)
 
-  const welcomeList = useRef()
+  const welcomeList = useRef<null | FlatList>()
 
   const onViewRef = useRef(({ changed }) => {
     setWelcomeListIndex(changed[0].index)
@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
   buttonText: {
     fontSize: 16,
     lineHeight: 16 * 1.4,
-    //fontFamily: Fonts.POPPINS_BOLD
+    fontFamily: Fonts.POPPINS_BOLD,
   },
   button: {
     backgroundColor: Colors.LIGHT_GREEN,
@@ -136,7 +136,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: Colors.DEFAULT_WHITE,
     lineHeight: 20 * 1.4,
-    //fontFamily: Fonts.POPPINS_MEDIUM
+    fontFamily: Fonts.POPPINS_MEDIUM
   }
 })
 
